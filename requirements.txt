@@ -1,0 +1,13 @@
+openai
+yt-dlp
+moviepy
+pytube
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+requests
+pillow
+tqdm
+langchain
+python-dotenv

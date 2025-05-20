@@ -1,5 +1,8 @@
 creds/
 output/
+logs/
 *.log
 *.mp4
+.env
+__pycache__/
 
