@@ -1,0 +1,13 @@
+name: Daily Upload
+
+on:
+  schedule:
+    - cron: "0 */8 * * *"
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run upload script
+        run: python3 scripts/upload_next.py

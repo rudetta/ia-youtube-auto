@@ -1,0 +1,13 @@
+name: Monthly Audit
+
+on:
+  schedule:
+    - cron: "0 0 1 * *"
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run audit script
+        run: python3 scripts/audit_monthly.py
